@@ -1,22 +1,41 @@
 #centercontent
 {
+	background: white;
 	width: 80%;
 	margin: 0 auto;
-	border: 1px dotted black;
+	border: 3px solid black;
 }
 
 #header
 {
 	
-	
+	background: #CDCDCD;
 	width: 80%;
 	margin: 0 auto;
+	border: 3px solid black;
 	
 }
 
 
 
 
+.menu
+{
+
+	background: #C0C0C0;
+	border: 1px solid black;
+	
+}
+
+.buttons
+{
+	
+	
+	width: 98%;
+	margin: 0 auto;
+	
+	
+}
 
 .row
 {
@@ -35,3 +54,7 @@
 	
 }
 
+.projectsBody
+{
+	background-image: url("../images/Kindertapete-Uni-Einfarbig-hellblau-35566-5-189268.jpg");
+}
