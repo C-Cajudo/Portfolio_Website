@@ -1,3 +1,5 @@
+
+/* Center's Everything Under Body */
 #centercontent
 {
 	background: white;
@@ -6,6 +8,7 @@
 	border: 3px solid black;
 }
 
+/* Center's Everything */
 #header
 {
 	
@@ -18,7 +21,7 @@
 
 
 
-
+/* border where navigation is */
 .menu
 {
 
@@ -27,19 +30,54 @@
 	
 }
 
-.buttons
+/* just buttons */
+.btn-group .button 
 {
 	
-	
-	width: 98%;
-	margin: 0 auto;
-	
-	
+  background-color: #808080; /* Grey */
+  border: 1px solid #696969;
+  color: black;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  border-radius: 8px;
+  box-shadow: 0 5px rgb(105, 105, 105);
+  
 }
 
-.row
+
+.btn-group .button:not(:last-child) 
 {
-	width: 26%;
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover 
+{
+	
+  background-color: #A9A9A9;
+  
+}
+
+
+.button:active 
+{
+	
+  background-color: #3e8e41;
+  box-shadow: 0 5px rgb(105, 105, 105);
+  transform: translateY(4px);
+  
+}
+
+/* aligning buttons */
+/*.row
+{
+	width: 40%;
 	justify-content: center;
 	display: flex;
 	flex-direction: row;
@@ -52,8 +90,9 @@
 	
 	flex-grow: 1;
 	
-}
+}*/
 
+/*creates the background image */
 .projectsBody
 {
 	background-image: url("../images/Kindertapete-Uni-Einfarbig-hellblau-35566-5-189268.jpg");
