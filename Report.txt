@@ -1,0 +1,27 @@
+at the start i had problems with the divisions, 
+that some of the pages were slightly lower
+
+fixed that issue by removing a <br> making the sites
+on the same height.
+
+managed to create a background, but may need to make it 
+not just a plain colour.
+
+deciding on what buttons to have for navigation, either
+links or buttons,
+
+made links to social media, and they go to an blank page, 
+and brings up a new tab on the browser, {say what code
+was used to create it and w3schools}
+
+managed to make buttons, struggled at making 
+them the right size, and figuring out which parts of the code i need
+{show code}
+
+i need to know how to let the buttons go smaller when the 
+browser gets re-sized
+
+finally added links to the buttons, and now they work
+
+added a pdf onto the CV tab and will add a download button with a pop up
+so the page looks fancy, 

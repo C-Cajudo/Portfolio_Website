@@ -19,7 +19,11 @@
 	
 }
 
-
+#resize
+{
+	resize: both;
+	overflow: auto;
+}
 
 /* border where navigation is */
 .menu
@@ -74,6 +78,51 @@
   
 }
 
+/* litterally just for download button in CV */
+
+.btn-group2 .button2
+{
+	
+  background-color: #DCDCDC; /* Grey */
+  border: 1px solid #000000;
+  color: black;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  border-radius: 8px;
+  box-shadow: 0 5px rgb(105, 105, 105);
+  
+}
+
+
+.btn-group2 .button2:not(:last-child) 
+{
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group2 .button2:hover 
+{
+	
+  background-color: #A9A9A9;
+  
+}
+
+
+.button2:active 
+{
+	
+  background-color: #C0C0C0;
+  box-shadow: 0 5px rgb(105, 105, 105);
+  transform: translateY(4px);
+  
+}
+
 /* aligning buttons */
 /*.row
 {
@@ -96,4 +145,9 @@
 .projectsBody
 {
 	background-image: url("../images/Kindertapete-Uni-Einfarbig-hellblau-35566-5-189268.jpg");
+}
+
+.picture
+{
+	border: 2px solid ;black
 }
