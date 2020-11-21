@@ -25,3 +25,5 @@ finally added links to the buttons, and now they work
 
 added a pdf onto the CV tab and will add a download button with a pop up
 so the page looks fancy, 
+
+trying to add download button, havent figured out yet, so button only links to pdf
