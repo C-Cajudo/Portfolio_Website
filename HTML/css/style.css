@@ -2,8 +2,9 @@
 /* Center's Everything Under Body */
 #centercontent
 {
-	background: white;
+	background: #C0C0C0;
 	width: 80%;
+	height: 50rem;
 	margin: 0 auto;
 	border: 3px solid black;
 }
@@ -32,6 +33,12 @@
 	background: #C0C0C0;
 	border: 1px solid black;
 	
+}
+
+p
+{
+	font-family: Georgia, serif;
+	font-size: 21px;
 }
 
 /*------------------------------------------------------*/
@@ -120,9 +127,13 @@
 /* Slideshow container */
 .slideshow-container 
 {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+	
+	
+	width: 300;
+	height: 325;
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
 }
 
 /* Hide the images by default */
@@ -140,7 +151,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -186,6 +197,7 @@
 /* The dots/bullets/indicators */
 .dot 
 {
+	
   cursor: pointer;
   height: 15px;
   width: 15px;

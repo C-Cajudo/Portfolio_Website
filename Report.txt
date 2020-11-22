@@ -27,3 +27,14 @@ added a pdf onto the CV tab and will add a download button with a pop up
 so the page looks fancy, 
 
 trying to add download button, havent figured out yet, so button only links to pdf
+
+removed button for the download and just let the toolbar for the pdf allow to download
+
+moved picture of me from projects to home (somehow I put it there)
+
+now adding a slideshow to the bottom home page and a link for the projects,
+
+adding a slideshow to the home menu to give it some decoration, add more projects into projects only showcase 
+3 or 4 stuff in the slideshow
+centered the slideshow,
+added text about the site and adding botton div
