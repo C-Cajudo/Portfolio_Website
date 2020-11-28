@@ -4,7 +4,76 @@
 		<title>Portfolio of Caleb Cajudo</title>
 		
 			<link rel="stylesheet" type="text/css" href="css/style.css">
+				
+				<script>
+					var x = 10;
+					var playerImage;
+					var frameNumber = 0;
+					
 			
+			function load()
+			{
+				// allocate new image, assign to our variable
+				playerImage = new Image();
+				
+				// set src of image
+				playerImage.src = "images/8fca9ac647f3f3f046b244c5aa22be07.png";
+			}
+		
+			function main()
+			{
+				load();
+			
+				// Get a ref to our canvas
+				var canvas = document.getElementById("canvas")
+				
+				// set width and height of canvas
+				canvas.width = 640;
+				canvas.height = 480;
+				
+				// create 2D drawing context
+				var ctx = canvas.getContext("2d");
+				
+				// call our draw function
+				draw(ctx);
+			}
+			
+			
+			
+			function draw(ctx)
+			{
+			
+			    //make clear
+                ctx.fillStyle = "grey";
+                ctx.fillRect(0,0, ctx.canvas.width, ctx.canvas.height);		
+			  
+			    var frameWidth = playerImage.width / 8;
+			    var frameHeight = playerImage.height/ 4;
+			  
+		        //draw my image
+		        ctx.drawImage(playerImage,
+		        frameNumber * frameWidth, 0, frameWidth, frameHeight, playerPosX, playerPosY, 200, 200)
+		          
+				x++;	
+		        if (x % 6 == 0)
+				{
+					frameNumber++;
+				}
+				  
+				if (frameNumber > 7)
+				{
+					frameNumber = 0;
+				}
+			    
+			   
+			    // Ask the browser to call this function again as soon as it can
+			    window.requestAnimationFrame(function(){draw(ctx)});
+			}
+
+			window.onload = main;
+			window.addEventListener("keydown", keydown);
+			
+		</script>
 		
 	 </head>
 	 
@@ -74,27 +143,60 @@
 			</div>		
 			<!-- content -->
 	
-			<div id="centercontent">
+			<div id="centercontent2">
+				
+				<!------- gallery -------->
+				<div class="gallery">
+					<a target="_blank" href="images/Cutest of the galaxy contest clipstudio.jpg">
+						<img src="images/Cutest of the galaxy contest clipstudio.jpg" width="600" height="40">
+					</a>
+					<div class="desc">Drawing I did for a contest, sadly I did not win</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="images/TuxEdoBord.jpg">
+						<img src="images/TuxEdoBord.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">A logo that I made for my channel</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="images/gummy arknights.jpg">
+						<img src="images/gummy arknights.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">A drawing of a game character</div>
+				</div>
 				
 				
 				
-				<p> THIS IS PROJECTS </p>
-				
-				<p><span class="heading">Hello and welcome to my site!</span></p>
+				<div class="gallery">
+					<a target="_blank" href="images/Barrel model.jpg">
+						<img src="images/Barrel model.jpg" width="600" height="400">
+					</a>
+					<div class="desc">A model barrel</div>
+				</div>
 			
-				<p class="heading">This site is the best</p>
 			
-				<p class="heading">This is another heading</p>
-		
-				<p style="color: red">Here is some text on my page</p>
-		
-				<p style="color: rgb(100, 200, 155)">Here is some text on my page</p>
-		
-				<p style="color: #FFCC00">Here is some text on my page</p>
-			
-		
+				<div class="gallery">
+					<canvas id="canvas" style="float: left; background: grey"></canvas>
+					<div class="desc">Canvas with animation</div>
+				</div>
 			
 			</div>
-		
+			
+			<!---- bottom text ---->
+			<div style=
+				"background: #CDCDCD;
+				width: 80%;
+				height: 128px;
+				margin: 0 auto;
+				border: 0.5px solid black;">
+				
+					<div style="text-align: center;">
+						<p>©Copyright by Caleb Cajudo</p>
+						<p>This page's content and trademarks property of their respective owners</p>
+					</div>
+			</div>
+			
 	 </body>	
 </html>

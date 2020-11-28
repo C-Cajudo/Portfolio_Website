@@ -4,11 +4,19 @@
 {
 	background: #C0C0C0;
 	width: 80%;
-	height: 50rem;
+	height: 40rem;
 	margin: 0 auto;
 	border: 3px solid black;
 }
 
+#centercontent2
+{
+	background: #C0C0C0;
+	width: 80%;
+	height: 60rem;
+	margin: 0 auto;
+	border: 3px solid black;
+}
 /* Center's Everything */
 #header
 {
@@ -24,6 +32,17 @@
 {
 	resize: both;
 	overflow: auto;
+}
+
+
+/*canvas*/
+
+#canvas
+{
+	
+	width: 200px;
+	height: 200px;
+
 }
 
 /* border where navigation is */
@@ -232,4 +251,32 @@ p
 {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/*---------------------------------------------------------*/
+/*gallery*/
+
+div.gallery 
+{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover 
+{
+  border: 1px solid #777;
+}
+
+div.gallery img 
+{
+  width: 100%;
+  height: auto;
+}
+
+div.desc 
+{
+  padding: 15px;
+  text-align: center;
 }

@@ -38,3 +38,11 @@ adding a slideshow to the home menu to give it some decoration, add more project
 3 or 4 stuff in the slideshow
 centered the slideshow,
 added text about the site and adding botton div add to others
+
+added a copyright at the bottom of the website, and added a gallery in the projects section
+shows a description of it and you can click on it for a bigger view
+
+remember to change the background of the website
+going to be adding canvas animation onto the projects, so it is not a gif, it is a 
+animating image from javscript onto the canvas.
+write a description of about myself in the about.
