@@ -28,20 +28,16 @@
 	
 }
 
-#resize
-{
-	resize: both;
-	overflow: auto;
-}
 
 
-/*canvas*/
 
 #canvas
 {
+/*canvas*/
 	
-	width: 200px;
-	height: 200px;
+	width: 180px;
+	height: 180px;
+	
 
 }
 
@@ -49,8 +45,8 @@
 .menu
 {
 
-	background: #C0C0C0;
-	border: 1px solid black;
+	background: #CDCDCD;
+	border: none;
 	
 }
 
@@ -128,11 +124,17 @@ p
 /*creates the background image */
 .projectsBody
 {
-	background-image: url("../images/Kindertapete-Uni-Einfarbig-hellblau-35566-5-189268.jpg");
+	
+	background-image: url("../images/River Valley.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .picture
 {
+	resize: auto;
+	overflow: overflow;
 	border: 2px solid black;
 	max-width: 100%;
 	height: auto;
@@ -227,6 +229,8 @@ p
   transition: background-color 0.6s ease;
 }
 
+
+
 .active, .dot:hover 
 {
   background-color: #717171;
@@ -258,6 +262,8 @@ p
 
 div.gallery 
 {
+  resize: both;
+  overflow: auto;
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
