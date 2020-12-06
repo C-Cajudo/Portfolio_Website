@@ -6,69 +6,93 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 				
 				<script>
+				
 					var x = 10;
 					var playerImage;
 					var frameNumber = 0;
-					
+					var playerPosX = 0;
+					var playerPosY = 0;
 			
-			function load()
-			{
-				// allocate new image, assign to our variable
-				playerImage = new Image();
+					function load()
+					{
+						// allocate new image, assign to our variable
+						playerImage = new Image();
 				
-				// set src of image
-				playerImage.src = "images/8fca9ac647f3f3f046b244c5aa22be07.png";
-			}
+						// set src of image
+						playerImage.src = "images/fubuki 3.png";
+					}
 		
-			function main()
-			{
-				load();
+					function main()
+					{
+						load();
 			
-				// Get a ref to our canvas
-				var canvas = document.getElementById("canvas")
+						// Get a ref to our canvas
+						var canvas = document.getElementById("canvas")
 				
-				// set width and height of canvas
-				canvas.width = 640;
-				canvas.height = 480;
+						// set width and height of canvas
+						canvas.width = 170;
+						canvas.height = 200;
 				
-				// create 2D drawing context
-				var ctx = canvas.getContext("2d");
+						// create 2D drawing context
+						var ctx = canvas.getContext("2d");
 				
-				// call our draw function
-				draw(ctx);
-			}
+						// call our draw function
+						draw(ctx);
+					}
+			
+					function keydown(event)
+					{
+						if	(event.key == "ArrowLeft")
+						{
+							playerPosX-=5;
+						}
+						else if	(event.key == "ArrowRight")
+						{
+							playerPosX+=5;
+						}
 			
 			
 			
-			function draw(ctx)
-			{
 			
-			    //make clear
-                ctx.fillStyle = "grey";
-                ctx.fillRect(0,0, ctx.canvas.width, ctx.canvas.height);		
+						else if	(event.key == "ArrowUp")
+						{
+							playerPosY-=5;
+						}
+						else if	(event.key == "ArrowDown")
+						{
+							playerPosY+=5;
+						}
+					}
+			
+					function draw(ctx)
+					{
+			
+						//make clear
+						ctx.fillStyle = "grey";
+						ctx.fillRect(0,0, ctx.canvas.width, ctx.canvas.height);		
 			  
-			    var frameWidth = playerImage.width / 8;
-			    var frameHeight = playerImage.height/ 4;
+						var frameWidth = playerImage.width / 9;
+						var frameHeight = playerImage.height/ 1;
 			  
-		        //draw my image
-		        ctx.drawImage(playerImage,
-		        frameNumber * frameWidth, 0, frameWidth, frameHeight, playerPosX, playerPosY, 200, 200)
+						//draw my image
+						ctx.drawImage(playerImage,
+						frameNumber * frameWidth, 0, frameWidth, frameHeight, playerPosX, playerPosY, 200, 200)
 		          
-				x++;	
-		        if (x % 6 == 0)
-				{
-					frameNumber++;
-				}
+						x++;	
+						if (x % 6 == 0)
+						{
+							frameNumber++;
+						}
 				  
-				if (frameNumber > 7)
-				{
-					frameNumber = 0;
-				}
+						if (frameNumber > 9)
+						{
+							frameNumber = 0;
+						}
 			    
 			   
-			    // Ask the browser to call this function again as soon as it can
-			    window.requestAnimationFrame(function(){draw(ctx)});
-			}
+						// Ask the browser to call this function again as soon as it can
+						window.requestAnimationFrame(function(){draw(ctx)});
+					}
 
 			window.onload = main;
 			window.addEventListener("keydown", keydown);
@@ -177,16 +201,22 @@
 				</div>
 			
 			
-				<div class="gallery">
-					<canvas id="canvas" style=" background: grey"></canvas>
-					<div class="desc">Canvas with animation</div>
-				</div>
+				
 				
 				<div class="gallery">
 					<a target="_blank" href="images/bin.jpg">
 						<img src="images/bin.jpg"  width="600" height="400">
 					</a>
 					<div class="desc">A model bin I made</div>
+				</div>
+				
+				
+				<!-- canvas -->
+				<div class="gallery">
+					<div >
+						<canvas id="canvas" style=" background: grey"></canvas>
+						<div class="desc">Canvas with animation</div>
+					</div>
 				</div>
 			
 			</div>

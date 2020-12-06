@@ -46,3 +46,11 @@ remember to change the background of the website
 going to be adding canvas animation onto the projects, so it is not a gif, it is a 
 animating image from javscript onto the canvas.
 write a description of about myself in the about.
+
+added a resizing option for the images in projects
+currently adding information in about page
+added a new background picture for the website and added information to the about page
+now i just need to add the animation sprite i am making in the canvas which is in the projects page
+
+finished the canvas at the end, struggled in fitting the image in since it was slightly bigger than the one
+i used before
