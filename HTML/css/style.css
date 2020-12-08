@@ -31,15 +31,7 @@
 
 
 
-/*#canvas
-{
 
-	
-	width: 180px;
-	height: 180px;
-	
-
-}*/
 
 /* border where navigation is */
 .menu
@@ -52,6 +44,7 @@
 
 p
 {
+	padding: 5px;
 	font-family: Georgia, serif;
 	font-size: 21px;
 }
