@@ -71,12 +71,13 @@ p
   
 }
 
-
+/* This prevents double borders */
 .btn-group .button:not(:last-child) 
 {
-  border-right: none; /* Prevent double borders */
+  border-right: none; 
 }
 
+/* When you hover over the buttons */
 .btn-group .button:hover 
 {
 	
@@ -84,7 +85,7 @@ p
   
 }
 
-
+/* When the buton is pressed */
 .button:active 
 {
 	
@@ -138,7 +139,7 @@ p
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
+/* The slideshow container */
 .slideshow-container 
 {
 	
@@ -150,13 +151,13 @@ p
 	margin: auto;
 }
 
-/* Hide the images by default */
+/* to hide the images by default */
 .mySlides 
 {
   display: none;
 }
 
-/* Next & previous buttons */
+/*the next & previous buttons */
 .prev, .next 
 {
   cursor: pointer;
@@ -173,20 +174,20 @@ p
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Position of the "next button" on the right */
 .next 
 {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* When mouse hovers, add a black background color with a little bit see-through */
 .prev:hover, .next:hover 
 {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+/* The Caption text */
 .text 
 {
   color: #f2f2f2;
@@ -263,17 +264,20 @@ div.gallery
   width: 180px;
 }
 
+/* When you hover your mouse over */
 div.gallery:hover 
 {
   border: 1px solid #777;
 }
 
+/* Size of the part where the image goes */
 div.gallery img 
 {
   width: 100%;
   height: auto;
 }
 
+/* Size of where the description under the picture is */
 div.desc 
 {
   padding: 15px;
